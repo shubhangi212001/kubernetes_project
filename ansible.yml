@@ -2,10 +2,10 @@
   become: true
   tasks: 
      - name: delete old deployment
-       command: kubectl delete -f /root/shubhangi/Deployment.yml
+       command: kubectl delete -f /root/shubhangi/kubernetes_project/Deployment.yml
      - name: delete old service
-       command: kubectl delete -f /root/shubhangi/Service.yml
+       command: kubectl delete -f /root/shubhangi/kubernetes_project/Service.yml
      - name: create new deployment
-       command: kubectl apply -f /root/shubhangi/Deployment.yml
+       command: kubectl apply -f /root/shubhangi/kubernetes_project/Deployment.yml
      - name: create new service
-       command: kubectl apply -f /root/shubhangi/Service.yml
+       command: kubectl apply -f /root/shubhangi/kubernetes_project/Service.yml
